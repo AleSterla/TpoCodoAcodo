@@ -4,19 +4,184 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="KeyWords" content="espacio, viajes espaciales, telescopio espacial, conquista del espacio, empresas espaciales">
+    <meta name="description" content="Conquista del espacio: viajes espaciales,  ">
+    <link rel="icon" href="/img/ViaLactea.jpg">
+    <link rel="stylesheet" href="css/styles.css">
     <title>TPO - Space Invaders</title>
+    <!-- Iconos: uso remoto de Iconos    
+    <script src="https://kit.fontawesome.com/1fa6a2b97f.js" crossorigin="anonymous"></script>
+    -->
+    <!-- Iconos: Uso local -->
+    <script src="/fontawesome-free-6.2.0-web/js/all.min.js"></script>
 
+    <style>
+        p {
+            color: red;
 
+        }
+    </style>
 
 
 
 </head>
 <body>
- 
+    <h1>
+        <strong>Conquista del espacio</strong>
+    </h1>
+    <i class="fa-solid fa-shuttle-space">Nave1</i>
+    <i class="fa-solid fa-user-astronaut fa-beat" style="--fa-beat-scale: 2.0;">Astronauta</i>
+    <i class="fa-solid fa-rocket">Cohete</i>
+    <i class="fa-solid fa-moon">Luna</i>
+    <i class="fa-solid fa-globe">Tierra</i>
+    <i class="fa-solid fa-satellite-dish">Transmision a Satelite</i>
+    <i class="fa-solid fa-satellite">Satelite espacio</i>
+    <i class="fa-solid fa-meteor">Meteoro</i>
+    <i class="fa-solid fa-sun">Sol</i>
+    <i class="fa-regular fa-star">Estrella</i>
+    <i class="fa-brands fa-space-awesome">Nave</i>
+fa-2xs
+fa-xs"
+fa-sm"
+fa-lg"
+fa-xl"
+fa-2xl
+    <header>
+        <nav id="menu">
+            <a href="#listas">Listas</a>
+            <a href="#tablas">Tablas</a>
+            <a href="#colspan">Colsapn</a>
+            <a href="Plan de estudios Curso Full Stack Python (material EXCLUSIVO de DOCENTES).pdf" download target ="_blank" >Descargar pdf</a>
+        </nav>
+    </header>
 
-    
+   <main>
+        <section id = "listas">
+            <h2>listas<i class="fa-solid fa-list-check"></i></h2>
+            <h6>Lista ordenada</h6> 
+            <ol type="I" >
+                <li>Opción 1</li>
+                <li>Opción 2</li>
+                <li>Opción 3</li>
+                <li>Opción 5</li>
+                <li>Opción 6</li>
+                <li>Opción 7</li>
+            </ol>
+            <h6>Lista desordenada</h6>
+            <ul>
+                <li>Opciones x</li>
+                <li>Opciones x</li>
+                <li>Opciones x</li>
+            </ul>
+        </section>
+        <hr>
+        <hr>
+        <hr>
+        <section id="tablas">
+            <h2><i class="fa-solid fa-table"></i>Tablas</h2>
+                <table>
+                    <!-- Fila 0 es la fila con nombres de columnas -->
+                    <tr>
+                        <th>Columna 1</th>
+                        <th>Columna 2</th>
+                        <th>Columna 3</th>
+                    </tr>
+                    <!-- Fila 1, primer registro -->
+                    <tr>
+                        <td>Registro 1x1</td>
+                        <td>Registro 1x2</td>
+                        <td>Registro 1x3</td>
+                    </tr>
+                    <tr>
+                        <td>Registro 2x1</td>
+                        <td>Registro 2x2</td>
+                        <td>Registro 2x3</td>
+                    </tr>
+                </table>
+                <hr>
+                <!-- Segunda tabla -->
+                <table>
+                    <tr>
+                        <th>Curso</th>
+                        <th>Comisión</th>
+                    </tr>
+                    <tr>
+                        <td>FullStack</td>
+                        <td>22533</td>
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                        <td>22500</td>
+                    </tr>
+                    <tr>
+                        <td>Web</td>
+                        <td>22580</td>
+                    </tr>
+                </table>
+        </section>
+        <hr>
+        <hr>
+        <hr>
+        <section id = "colspan">
+            <h2>Colspan</h2>
+            <table>
+                <tr>
+                    <th>Curso</th>
+                    <th>Comisión</th>
+                </tr>
+                <tr>
+                    <td colspan="2">FullStack</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>22500</td>
+                </tr>
+                <tr>
+                    <td>Web</td>
+                    <td>22580</td>
+                </tr>
+            </table>
+            <hr>
+            <table>
+                <tr>
+                    <th>Curso</th>
+                    <th>Comisión</th>
+                </tr>
+                <tr>
+                    <td>FullStack</td>
+                    <td>22533</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Java</td>
+                    <td>22500</td>
+                </tr>
+                <tr>
+                    <td>22580</td>
+                </tr>
+            </table>
+        </section>
 
+        <form id="contactform" method="POST">
+            <input type="text" name="name" placeholder="Your name">
+            <input type="email" name="_replyto" placeholder="Your email">
+            <input type="hidden" name="_subject" value="Website contact" />
+            <textarea name="message" placeholder="Your message"></textarea>
+            <input type="text" name="_gotcha" placeholder="adfssss" id="ju" class="sinmostrar" />
+            <input type="hidden" name="_next" value="https://www.indicom.com.ar" />
+            <input type="submit" value="Send">
+        </form>
+        <script>
+            var contactform =  document.getElementById('contactform');
+            contactform.setAttribute('action', 'https://formspree.io/' + 'asterla' + '@' + 'indicom' + '.' + 'com.ar');
+        </script>
 
-    
+    </main>
+    <hr>
+    <hr>
+    <footer>
+        <a href="#menu">Volver a menu</a>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2929.193243440134!2d-65.03595858396442!3d-42.7631182407803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbe024a84c02b4177%3A0xdf1e0971139d3028!2sMuelle%20Comandante%20Luis%20Piedra%20Buena!5e0!3m2!1ses!2sar!4v1660244918772!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/m5yVHer5SPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </footer>
 </body>
 </html>
