@@ -4,173 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> -->
+
     <meta name="KeyWords" content="espacio, viajes espaciales, telescopio espacial, conquista del espacio, empresas espaciales">
-    <meta name="description" content="Conquista del espacio: viajes espaciales,  ">
-    <link rel="icon" href="img/ViaLactea.jpg">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>TPO - Space Invaders</title>
+    <meta name="description" content="Conquista del espacio: viajes espaciales, telescopios espaciales y empresas epaciales principales">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
     <!-- Iconos: uso remoto de Iconos    
-    <script src="https://kit.fontawesome.com/1fa6a2b97f.js" crossorigin="anonymous"></script>
-    -->
+    <script src="https://kit.fontawesome.com/1fa6a2b97f.js" crossorigin="anonymous"></script> -->
     <!-- Iconos: Uso local -->
     <script src="fontawesome-free-6.2.0-web/js/all.min.js"></script>
+    <link rel="icon" href="img/galaxia.ico"><!-- convertido con https://convertico.com -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/styles.css">
 
+    <title>Space invaders</title>
 </head>
-<body>
-    <h1>
-        <strong>Conquista del espacio</strong>
-    </h1>
-    <i class="fa-solid fa-shuttle-space">Nave1</i>
-    <i class="fa-solid fa-user-astronaut fa-beat" style="--fa-beat-scale: 2.0;">Astronauta</i>
-    <i class="fa-solid fa-rocket">Cohete</i>
-    <i class="fa-solid fa-moon">Luna</i>
-    <i class="fa-solid fa-globe">Tierra</i>
-    <i class="fa-solid fa-satellite-dish">Transmision a Satelite</i>
-    <i class="fa-solid fa-satellite">Satelite espacio</i>
-    <i class="fa-solid fa-meteor">Meteoro</i>
-    <i class="fa-solid fa-sun">Sol</i>
-    <i class="fa-regular fa-star">Estrella</i>
-    <i class="fa-brands fa-space-awesome">Nave</i>
-fa-2xs
-fa-xs"
-fa-sm"
-fa-lg"
-fa-xl"
-fa-2xl
+<body translate="yes" spellcheck="true">
     <header>
-        <nav id="menu">
-            <a href="#listas">Listas</a>
-            <a href="#tablas">Tablas</a>
-            <a href="#colspan">Colsapn</a>
-            <a href="Plan de estudios Curso Full Stack Python (material EXCLUSIVO de DOCENTES).pdf" download target ="_blank" >Descargar pdf</a>
+        <nav class="headermenubar">
+            <div id="logum">
+                    <img id="logo" src="img/via-lactea.png" alt="via-lactea">
+                    <a href="index.html" title="Home: Conquista del Espacio"><h1 class="animate__animated animate__lightSpeedInLeft">La Conquista del Espacio</h1></a>
+            </div>
+            <div>
+                <input id="menu-check" type="checkbox">
+                <label id="menu2" for="menu-check">
+                    <span id="menu-abrir">&#9776;</span>
+                    <span id="menu-cerrar">X</span>
+                </label>
+                <ul id="menu" class="botones">
+                    <li>
+                        <a href="index.html" title="Home: Conquista del Espacio" ><i class="fa-solid fa-house">Home</i> Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#Expediciones" title="Expediciones a la Luna, Marte, sol, Voyager, espacio profundo" ><i class="fa-solid fa-rocket">Cohete</i> Expediciones</a>
+                    </li>
+                    <li>    
+                        <a href="#GrandesObservatoriosdelaNASA"  title="Observatorios Principales: James Webb, Hubble, CGRO, CXO y Spitzer"><i class="fa-solid fa-satellite"> Satelite espacio</i>Observatorios</a>
+                    </li>
+                    <li>    
+                        <a href="#Principalesempresas" title="Principales empresas son:"><i class="fa-solid fa-globe">Tierra</i> Empresas</a>
+                    </li>
+                    <li>    
+                        <a href="Plan de estudios Curso Full Stack Python (material EXCLUSIVO de DOCENTES).pdf" title="Documentacion general" download target ="_blank" ><i class="fa-solid fa-book">libro</i> Info.pdf</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
-
-   <main>
-        <section id = "listas">
-            <h2>listas<i class="fa-solid fa-list-check"></i></h2>
-            <h6>Lista ordenada</h6> 
-            <ol type="I" >
-                <li>Opción 1</li>
-                <li>Opción 2</li>
-                <li>Opción 3</li>
-                <li>Opción 5</li>
-                <li>Opción 6</li>
-                <li>Opción 7</li>
-            </ol>
-            <h6>Lista desordenada</h6>
-            <ul>
-                <li>Opciones x</li>
-                <li>Opciones x</li>
-                <li>Opciones x</li>
-            </ul>
-        </section>
-        <hr>
-        <hr>
-        <hr>
-        <section id="tablas">
-            <h2><i class="fa-solid fa-table"></i>Tablas</h2>
-                <table>
-                    <!-- Fila 0 es la fila con nombres de columnas -->
-                    <tr>
-                        <th>Columna 1</th>
-                        <th>Columna 2</th>
-                        <th>Columna 3</th>
-                    </tr>
-                    <!-- Fila 1, primer registro -->
-                    <tr>
-                        <td>Registro 1x1</td>
-                        <td>Registro 1x2</td>
-                        <td>Registro 1x3</td>
-                    </tr>
-                    <tr>
-                        <td>Registro 2x1</td>
-                        <td>Registro 2x2</td>
-                        <td>Registro 2x3</td>
-                    </tr>
-                </table>
-                <hr>
-                <!-- Segunda tabla -->
-                <table>
-                    <tr>
-                        <th>Curso</th>
-                        <th>Comisión</th>
-                    </tr>
-                    <tr>
-                        <td>FullStack</td>
-                        <td>22533</td>
-                    </tr>
-                    <tr>
-                        <td>Java</td>
-                        <td>22500</td>
-                    </tr>
-                    <tr>
-                        <td>Web</td>
-                        <td>22580</td>
-                    </tr>
-                </table>
-        </section>
-        <hr>
-        <hr>
-        <hr>
-        <section id = "colspan">
-            <h2>Colspan</h2>
-            <table>
-                <tr>
-                    <th>Curso</th>
-                    <th>Comisión</th>
-                </tr>
-                <tr>
-                    <td colspan="2">FullStack</td>
-                </tr>
-                <tr>
-                    <td>Java</td>
-                    <td>22500</td>
-                </tr>
-                <tr>
-                    <td>Web</td>
-                    <td>22580</td>
-                </tr>
-            </table>
-            <hr>
-            <table>
-                <tr>
-                    <th>Curso</th>
-                    <th>Comisión</th>
-                </tr>
-                <tr>
-                    <td>FullStack</td>
-                    <td>22533</td>
-                </tr>
-                <tr>
-                    <td rowspan="2">Java</td>
-                    <td>22500</td>
-                </tr>
-                <tr>
-                    <td>22580</td>
-                </tr>
-            </table>
-        </section>
-
-        <form id="contactform" method="POST">
-            <input type="text" name="name" placeholder="Your name">
-            <input type="email" name="_replyto" placeholder="Your email">
-            <input type="hidden" name="_subject" value="Website contact" />
-            <input type="hidden" name="_next" value="https://www.indicom.com.ar" />
-            <input type="submit" value="Send">
-        </form>
-        <script>
-            var contactform =  document.getElementById('contactform');
-            contactform.setAttribute('action', 'https://formspree.io/' + 'asterla' + '@' + 'indicom' + '.' + 'com.ar');
-        </script>
-
+    <main class="contenido-ppal">
+        <div class="divmain">
+             <section class="secciones" id="principal">
+                https://es.wikipedia.org/wiki/Carrera_espacial
+                <h3 title="Si bien no se debe usar fondo imagen con letras me gusto!" style="text-align: center;">La Conquista del Espacio</h3>
+                La carrera espacial fue una pugna entre Estados Unidos y la Unión Soviética por la <u>Conquista del Espacio</u> que duró aproximadamente de 1955 a 1975. Supuso el esfuerzo paralelo de ambos países de explorar el espacio exterior con satélites artificiales y de enviar humanos al espacio y a la superficie lunar.
+                <br>    
+                Aunque el conflicto se remonta a las primeras tecnologías de cohetes y a las tensiones internacionales tras la Segunda Guerra Mundial, el inicio de la carrera espacial se hizo efectivo con el lanzamiento soviético del Sputnik 1 el 4 de octubre de 1957. El término se acuñó de forma análoga al de la carrera armamentística. La carrera espacial constituyó uno de los ejes principales de rivalidad cultural y tecnológica entre la URSS y los Estados Unidos durante la Guerra Fría. La tecnología espacial se convirtió en una arena particularmente importante en este conflicto, tanto por sus potenciales aplicaciones militares como por sus efectos sobre la opinión pública de uno y otro país.
+                <br><br><br>
+            </section>
+            <section class="secciones">
+                <article class="articu">
+                    <img src="img/Exploracionprofunda.gif" alt="Exploracion profunda">
+                    <div>
+                        <h3>Expediciones</h3>
+                        <p>La exploración espacial designa los esfuerzos del ser humano en estudiar el espacio y sus astros desde el punto de vista científico y de su explotación económica.</p>
+                    </div>
+                </article>
+                <article class="articu">
+                     <img src="img/telescopioimagenes.gif" alt="Telescopio imagenes">
+                    <div>
+                        <h3>Grandes Observatorios de la NASA</h3>
+                        <p>La serie Grandes Observatorios de la NASA son cuatro telescopios espaciales de gran potencia. Cada telescopio ha tenido un coste similar y han servido para ampliar los conocimientos en Astronomía. Las cuatro misiones han examinado una parte del espectro electromagnético a la que estaban diseñados.</p>
+                    </div>
+                </article>
+            </section>
+        </div>
+        <aside class="contenido-aside">
+            <p id="pvialactea">Simulacion de la vía lactea en el medio del espacio</p>
+            <img id="viagif2" src="/img/lacteamovida.gif" alt="via lactea girando">
+            <br>
+            <br>
+            <br>
+        </aside>
     </main>
-    <hr>
-    <hr>
     <footer>
-        <a href="#menu">Volver a menu</a>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2929.193243440134!2d-65.03595858396442!3d-42.7631182407803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbe024a84c02b4177%3A0xdf1e0971139d3028!2sMuelle%20Comandante%20Luis%20Piedra%20Buena!5e0!3m2!1ses!2sar!4v1660244918772!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/m5yVHer5SPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        Cabo Cañveral (EEUU)
+        <iframe width="290" height="200" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44215.371765159565!2d-80.57809395694561!3d28.480381622628375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e0a3f2a5fb9a45%3A0x87ef91ee250f8fde!2sCabo%20Ca%C3%B1averal!5e0!3m2!1ses-419!2sar!4v1666583894415!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+        Lanzamiento del Apolo 11
+        <iframe width="290" height="200" src="https://www.youtube.com/embed/KOygw3QfO9o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+        <br><a href="#menu">Volver a menu </a>
     </footer>
+</body>
+</html>
+    
 </body>
 </html>

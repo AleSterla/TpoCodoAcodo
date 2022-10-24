@@ -1,0 +1,155 @@
+.header-menubar{
+    display: flex;
+    flex-direction: row;
+    height: 10rem;
+    background-color: transparent;
+
+    justify-content: space-around;
+    /* justify-content: space-between; */
+    text-align: center;
+    justify-items: center;
+    align-items:center;  
+
+}
+.header-menubar>div{
+    width: 15%;
+    justify-content: right;
+}
+.header-menubar>h1{
+    width: 15%;
+}
+header{
+    background-color: #fff;
+    box-shadow: 0 0 0.5rem rgb(83 78 76);
+
+}
+uls{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+}
+lis{
+    /* width: 70%; */
+    list-style-type: none;
+
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+    /* display: inline-block; */
+    border-radius: 25px;
+    border: 2px solid black;
+    /* height: 40px;
+    width: 70px; */
+    text-align: center;
+    vertical-align: middle;
+    align-items:center;  
+
+}
+a{
+    text-decoration: none;
+}
+.header-menubar a:hover{
+    color: chartreuse;
+
+}
+
+@media screen and (max-width:600px){
+    h1{
+        font-size: 3rem;
+        color:blue;
+    }
+
+    .flex-container{
+        flex-direction: row; /*Cambio de dirección a filas para que el titulo proyectos no quede encima del menú*/
+        align-items: center; /*posiciona el menu en el centro de la fila*/
+    }
+}
+
+@media screen and (min-width:768px){
+    h2{
+        color:red; /*Para tablet sera h2 rojo*/
+    }
+    h1{
+        color: yellow;
+    }
+}
+
+@media screen and (min-width:1440px){
+
+    h1{
+        color: black;
+    }
+    h2{
+        color:black; /*Para tablet sera h2 rojo*/
+    }
+}
+@media screen and (min-width: 600px){
+    .aside {
+        /* flex: <flex-grow> <flex-shrink> <flex-basis> */
+        flex: 1 1 auto;
+    }
+}
+/* tamaño pc */
+@media screen and (min-width: 800px){
+    .articulo{flex:2 0;}
+    .izquierda{order: 1;}
+    .articulo{order: 2;}
+    .derecha{order: 3;}
+    .footer{order: 4;}
+}
+/* *{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 1rem;
+    height: 100%;
+}
+
+body, header, main, footer{
+    border: 3px red solid;
+    min-height: 50px;
+    margin: 0.5rem;
+    min-width: 400px;
+}
+
+main{
+    min-height: 200px;
+    overflow: auto;
+}
+
+
+main>div {
+    border: 2px blue solid;
+    min-height: 180px;
+    margin: 0.5rem;
+    height: auto;
+    float: left;
+    width: 65%;
+}
+
+main>aside {
+    border: 3px brown solid;
+    min-height: 180px;
+    min-width: 25%;
+    margin: 0.5rem;
+    float: left;
+    width: auto;
+}
+
+.secciones{
+    border: 3px green solid;
+    min-height: 50px;
+    margin: 0.5rem;
+}
+
+.secciones article{
+    border: 2px purple solid;
+    margin: 0.5rem;
+    min-height: 20px;
+}
+#gif-ppal{
+    width: 100%;
+} */
