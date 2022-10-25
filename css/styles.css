@@ -47,7 +47,12 @@ body, header, main, footer{
     margin: 1rem;
 }
 header{
+    background-color: black;    
     box-shadow: 0 0 3rem rgb(64, 64, 255);
+    position: sticky;
+    top: 2rem;
+    padding: 0%;
+    z-index: 555;
 }
 body{
     /* border: 3px black solid; */
@@ -71,13 +76,20 @@ article:hover{
 #logum:hover{
     border: 3px yellow solid;
 }
-#viagif2:hover{
+.viagif2:hover{
     border: 2px yellow solid;
 }
-#viagif2{
-    flex-grow: 1; 
-
+h3{
+    color: yellow;
 }
+.viagif2{
+    flex-grow: 1; 
+}
+
+.contenido-aside>p,.contenido-aside>img{
+    flex-grow: 1 ; 
+}
+
 /* #menu:hover{
     border: 2px yellow solid;
 } */
@@ -102,6 +114,12 @@ article:hover{
     /* text-align: center; */
     /* padding: 10px; */
 }
+.piecito{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
 #logum{
     width: 30%;
     display: flex;
@@ -109,13 +127,23 @@ article:hover{
     flex-wrap: nowrap;
     justify-content: flex-start; 
 }
+#logum>img,#logum>a{
+    flex: 1 1 auto;
+
+}
 #pvialactea{
     font-family: atack, cursive;
+    letter-spacing: 2px;
+    text-align: justify;
     /* font-size: auto; */
 }
 
 .divmain,.contenido-aside{
     width: 300px;
+    
+    letter-spacing: 2px;
+    text-align: justify;
+
 }
 .divmain{
     width: 70%;
@@ -153,7 +181,7 @@ article:hover{
     text-align: center;
     
 }
-#menu li{
+#menu li,.butone{
     list-style-type: none;
 
     flex-grow: 1;
@@ -181,7 +209,7 @@ article:hover{
 a{
     text-decoration: none;
 } 
-#menu a:hover{
+#menu a:hover, .butone:hover{
     color: yellow;
 }
 #menu li:hover{
@@ -219,35 +247,53 @@ aside>img{
     align-self: stretch;/*verticalmente para cada hijo al distinto*/
     height: auto;
     padding: 10px;
-
+    
 } 
+.secciones{
+    padding: 20px 20px;
+}
 .secciones > article {
+
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 
     /*horizontalmente*/
     justify-content: space-between;
     /*verticalmente */    
     /* align-items: stretch;      */
+
+    letter-spacing: 2px;
+    text-align: justify;
+
+}
+article > div{
+    padding: 30px 30px;
+
+
 }
 .articu>div{
-    flex: 1 1 auto;
+    /* flex: 1 1 auto; */
     width: 70%;
 
 }
 .articu>img{
-    flex: 1 1 auto;
+    /* flex: 1 1 auto; */
     width: 30%;
 
 }
 
 
+
 @media all and (min-width: 320px){
     *                   {font-size: 1.5rem; }
-    a>h1                {font-size: 1.75rem;}
+    a>h1                {font-size: 1.75rem;color:rgb(110, 110, 235);}
+    /* .articu             {display:inline !important;}
+    .artimg             {width: 100%; height: 60%;}  */
+    .articu>div         {width: 100%;}
+    .articu>img         {width: 100%;}
     .contenido-aside    {flex:1 1 auto;}
-    #viagif2            {width: 100%; height: 100%;}
+    .viagif2            {width: 100%; height: 80%;}
     .contenido-aside    {order: 1;}
     .divmain            {order: 2;}
     .footer             {order: 3;}
@@ -255,10 +301,12 @@ aside>img{
 
 
 @media all and (min-width: 768px){
-    *                   {font-size: 1.8rem; }
-    a>h1                {font-size: 2rem;}
+    *                   {font-size: 1.8rem;}
+    a>h1                {font-size: 2rem;color:rgb(234, 234, 141);}
+    .articu>div         {width: 70%;}
+    .articu>img         {width: 30%;}
     .contenido-aside    {flex:1 1 auto;}
-    #viagif2            {width: 100%; height: 100%;}
+    .viagif2            {width: 100%; height: 92%;}
     .contenido-aside    {order: 1;}
     .divmain            {order: 2;}
     .footer             {order: 3;}
@@ -266,9 +314,9 @@ aside>img{
 
 @media all and (min-width: 1024px){
     *                   {font-size: 2rem; }
-    a>h1                {font-size: 3rem;}
+    a>h1                {font-size: 3rem;color:rgb(111, 218, 114);}
     .contenido-aside    {flex:1 1 auto;}
-    #viagif2            {width: 100%; height: 30%;}
+    .viagif2            {width: 100%; height: 97%;}
     .contenido-aside    {order: 2;}
     .divmain            {order: 1;}
     .footer             {order: 3;}
@@ -279,12 +327,13 @@ aside>img{
 
 @media all and (min-width: 1440px){
     *                   {font-size: 2.2rem;}
-    a>h1                {font-size: 4rem;}
+    a>h1                {font-size: 4rem;color:rgb(111, 207, 218);}
     .contenido-aside    {flex:1 1 auto;}
-    #viagif2            {width: 100%; height: 30%;}
+    .viagif2            {width: 100%;height: 90%;}
     .contenido-aside    {order: 2;}
     .divmain            {order: 1;}
     .footer             {order: 3;}
+    .ifr                {width: 560px;height: 300px;margin-bottom: 50px;}
 }
 
 @media all and (min-width: 2300px){

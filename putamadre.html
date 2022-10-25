@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .contenido-ppal{
+            /*padre*/
+            background-color: aqua;
+            margin: 1px 1px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            justify-content: stretch;
+            /* align-items: flex-start; */
+        }
+        .divmain, .contenido-aside{
+            margin: 1px 1px;
+        }
+        .divmain{ 
+            background-color: rgb(203, 138, 16);
+            width: var(--widthdivmain);
+            width: 300px;
+            flex: 1 1 auto;    
+            /* align-self: center; */
+            /* align-items: center; */
+            /* align-content:center; */
+            
+
+        }
+        .contenido-aside{
+            background-color: green;
+            width: var(--widthaside);
+            width: 200px;
+            /* flex: 1;     */
+
+        } 
+
+
+        .viagif1{
+            width: var(--widthimg1);
+            width: 150px;
+        }
+        .viagif2{
+            width: var(--widthimg2);
+            width: 180px;
+        }
+
+        /* @media all and (min-width: 320px){
+            *       {
+                    --widthtotal: 320px;
+                    --widthdivmain: calc(var(--widthtotal)*0.9);
+                    --widthaside:   var(--widthdivmain);
+                    --widthimg1:    calc(var(--widthdivmain)*0.3);
+                    --widthimg2:    calc(var(--widthaside)*.9);
+                    }
+            .viagif1{border: 4px rgb(163, 16, 16) solid;}
+        }
+        @media all and (min-width: 768px){
+            *       {
+                    --widtha: 768px;
+                    --widthdivmain: calc(var(--widthtotal)*0.90);
+                    --widthimg1:    calc(var(--widthdivmain)*0.30);
+                    --widthimg2:    calc(var(--widthdivmain)*1);
+                    }
+            .viagif1{border: 40px blue solid;}
+         
+        }
+        */
+
+
+
+        .div1{
+            width: 30%;
+        }
+        .div2{
+            width: 60%;
+        }
+
+        .secciones{
+            /*padre*/
+            background-color: blueviolet;
+            width: 98%;
+            margin: 1% 1%;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            justify-content: space-around;
+            /* align-items: flex-start; */
+            align-items: center; 
+            letter-spacing: 2px;
+            text-align: justify;
+
+        }
+        .articu{
+            /*padre*/
+            border: 1px yellow solid;
+            background-color: darkkhaki;
+            width: 98%;
+            margin: 1% 1%;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+            justify-content: space-around;
+            align-items: center; 
+            letter-spacing: 2px;
+            text-align: justify;
+        }
+    </style>
+
+</head>
+<body style="background-color: yellow">
+    <main class="contenido-ppal">
+        <div class="divmain">
+            <img class="viagif1" src="img/lacteamovida.gif" alt="via lactea girando">
+            <p>asdfñlkasfd afsdlñjaf ñakljf fads j</p>
+             <!-- <section class="secciones" id="principal">
+                <p>https://es.wikipedia.org/wiki/Carrera_espacial</p>
+                <h3 title="Si bien no se debe usar fondo imagen con letras me gusto!" style="text-align: center;">La Conquista del Espacio</h3>
+                <p>
+                    La carrera espacial fue una pugna entre Estados Unidos y la Unión Soviética por la <u>Conquista del Espacio</u> que duró aproximadamente de 1955 a 1975. Supuso el esfuerzo paralelo de ambos países de explorar el espacio exterior con satélites artificiales y de enviar humanos al espacio y a la superficie lunar.
+                    <br>    
+                    Aunque el conflicto se remonta a las primeras tecnologías de cohetes y a las tensiones internacionales tras la Segunda Guerra Mundial, el inicio de la carrera espacial se hizo efectivo con el lanzamiento soviético del Sputnik 1 el 4 de octubre de 1957. El término se acuñó de forma análoga al de la carrera armamentística. La carrera espacial constituyó uno de los ejes principales de rivalidad cultural y tecnológica entre la URSS y los Estados Unidos durante la Guerra Fría. La tecnología espacial se convirtió en una arena particularmente importante en este conflicto, tanto por sus potenciales aplicaciones militares como por sus efectos sobre la opinión pública de uno y otro país.
+                    <br><br><br>
+                </p>
+            </section>
+            <section class="secciones">
+                <article class="articu">
+                    <div class="div1">
+                        <img src="img/Exploracionprofunda.gif" alt="Exploracion profunda">
+                    </div>
+                    <div class="div2">
+                        <h3>Expediciones</h3>
+                        <p>La exploración espacial designa los esfuerzos del ser humano en estudiar el espacio y sus astros desde el punto de vista científico y de su explotación económica.</p>
+                    </div>
+                </article>
+                <article class="articu">
+                    <div class="div1">
+                        <img src="img/telescopioimagenes.gif" alt="Telescopio imagenes">
+                    </div>
+                    <div class="div2">
+                        <h3>Grandes Observatorios de la NASA</h3>
+                        <p>La serie Grandes Observatorios de la NASA son cuatro telescopios espaciales de gran potencia. Cada telescopio ha tenido un coste similar y han servido para ampliar los conocimientos en Astronomía. Las cuatro misiones han examinado una parte del espectro electromagnético a la que estaban diseñados.</p>
+                    </div>
+                </article>
+            </section> -->
+        </div>
+        <aside class="contenido-aside">
+            <!-- <p id="pvialactea">Simulacion de la vía lactea en el medio del espacio</p> -->
+            <img class="viagif2" src="img/lacteamovida.gif" alt="via lactea girando">
+        </aside>
+    </main>
+
+</body>
+</html>
