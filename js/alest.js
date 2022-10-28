@@ -115,7 +115,7 @@ async function obtener(dia,cual){
     try{
         // const apiUrl = "https://api.nasa.gov/planetary/apod?date=2022-10-18&api_key=DEMO_KEY"
         const apiUrl = "https://api.nasa.gov/planetary/apod?date="+dia+"&api_key=DEMO_KEY"
-        alert(apiUrl);
+        // alert(apiUrl);
         const response = await fetch(apiUrl);
         const data = await response.json();
         console.log(data);
@@ -182,8 +182,8 @@ function fechahoy(){
 
 if(sPage == "observatorios.html" || sPage == "expediciones.html" ){
     let aura=fechahoy();
-    alert(aura);
-    obtener(aura,'1');
+    // alert(aura);
+///////agregar    // obtener(aura,'1');
     console.log(aura);
 }
 
