@@ -115,14 +115,15 @@ async function obtener(dia,cual){
     try{
         // const apiUrl = "https://api.nasa.gov/planetary/apod?date=2022-10-18&api_key=DEMO_KEY"
         const apiUrl = "https://api.nasa.gov/planetary/apod?date="+dia+"&api_key=DEMO_KEY"
+        alert(apiUrl);
         const response = await fetch(apiUrl);
         const data = await response.json();
         console.log(data);
         // console.log(data.code);
         if(data.code== null){
             if(cual=='1'){
-                document.getElementById("imagen").src = data.url;
-                document.getElementById("imagen").className='vis1';
+                document.getElementById("imagen1").src = data.url;
+                document.getElementById("imagen1").className='vis1';
             }else{
                 document.getElementById("imagen2").src = data["hdurl"];
                 document.getElementById("imagen2").className='vis1';
@@ -179,8 +180,9 @@ function fechahoy(){
     }
 }
 
-if(sPage == "observatorios.html"){
+if(sPage == "observatorios.html" || sPage == "expediciones.html" ){
     let aura=fechahoy();
+    alert(aura);
     obtener(aura,'1');
     console.log(aura);
 }
