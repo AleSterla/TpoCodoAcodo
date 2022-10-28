@@ -118,7 +118,7 @@ async function obtener(dia,cual){
         const response = await fetch(apiUrl);
         const data = await response.json();
         console.log(data);
-        console.log(data.code);
+        // console.log(data.code);
         if(data.code== null){
             if(cual=='1'){
                 document.getElementById("imagen").src = data.url;
@@ -180,8 +180,9 @@ function fechahoy(){
 }
 
 if(sPage == "observatorios.html"){
-    // obtener(hoy,'1');
-    console.log(hoy);
+    let aura=fechahoy();
+    obtener(aura,'1');
+    console.log(aura);
 }
 
 
