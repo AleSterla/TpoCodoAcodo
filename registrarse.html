@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="KeyWords" content="espacio, viajes espaciales, telescopio espacial, conquista del espacio, empresas espaciales">
+    <meta name="description" content="Conquista del espacio: viajes espaciales, telescopios espaciales y empresas epaciales principales">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <!-- Iconos: uso remoto de Iconos    
+    <script src="https://kit.fontawesome.com/1fa6a2b97f.js" crossorigin="anonymous"></script> -->
+    <!-- Iconos: Uso local -->
+    <script src="fontawesome-free-6.2.0-web/js/all.min.js"></script>
+    <link rel="icon" href="img/galaxia.ico"><!-- convertido con https://convertico.com -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/><!--animaciones-->
+    <!-- Bootstrap Local-->
+    <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/alest.js" ></script>
+    <title>Space invaders</title>
+</head>
+<body translate="yes" spellcheck="true" style="background-color: transparent;">
+    <header>
+        <nav class="headermenubar animate__animated animate__slideInDown">
+            <div id="logum">
+                    <img id="logo" src="img/via-lactea.png" alt="via-lactea">
+                    <a href="index.html" title="Home: Conquista del Espacio"><h1 class="animate__animated animate__lightSpeedInLeft">La Conquista del Espacio</h1></a>
+            </div>
+            <div>
+                <input id="menu-check" type="checkbox">
+                <label id="menu2" for="menu-check">
+                    <span id="menu-abrir">&#9776;</span>
+                    <span id="menu-cerrar">X</span>
+                </label>
+                <ul id="menu" class="botones">
+                    <li>
+                        <a href="index.html" onclick="Classalirse();" title="Home: Conquista del Espacio" ><i class="fa-solid fa-house">Home</i> Inicio</a>
+                    </li>
+                    <li>
+                        <a href="expediciones.html" onclick="Classalirse();" title="Expediciones a la Luna, Marte, sol, Voyager, espacio profundo" ><i class="fa-solid fa-rocket">Cohete</i> Expediciones</a>
+                    </li>
+                    <li>    
+                        <a href="observatorios.html"  onclick="Classalirse();" title="Observatorios Principales: James Webb, Hubble, CGRO, CXO y Spitzer"><i class="fa-solid fa-satellite"> Satelite espacio</i>Observatorios</a>
+                    </li>
+                    <li>    
+                        <a href="registrarse.html" onclick="Classalirse();" title="Suscríbete a la información más actualizada"><i classno="fa-solid fa-globe" class="fa-solid fa-user">Registrarse</i> Registrarse</a>
+                    </li>
+                    <li>    
+                        <a href="infotpo.pdf" title="Documentacion general" download target ="_blank"><i class="fa-solid fa-book">libro</i> Info TPO.pdf</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="content-formulario" id="mainforreturn">
+        <section class="seccionform animate__animated animate__lightSpeedInLeft">
+            <div class="registro">
+                <h2>Registrate!</h2>
+                <p>Podés dejarnos todos tus datos para concerte mejor para estar en contacto y en caso de que estés interesado, te enviaremos la información más actualizada sobre... "La Conquista del Espacio"</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ratione rerum assumenda fuga placeat at maxime porro. Magnam saepe eveniet ut blanditiis, earum ea consequuntur vitae vel ad accusamus dolores?
+                Dolorem minus facere deserunt deleniti iusto labore. Ex asperiores molestiae distinctio rem et illo dolore inventore minima, quos similique eaque nesciunt iste architecto autem deleniti nisi, quasi ipsa quod sed.
+                At debitis numquam perferendis deserunt odit nisi quibusdam, quo natus perspiciatis rerum dolorum impedit voluptatibus ullam quam facere, velit error, culpa ex autem tempore delectus in accusamus? Rerum, culpa enim?
+                Exercitationem eaque accusamus minus facilis porro debitis blanditiis ab? Maxime, totam commodi, enim at nisi qui velit deleniti itaque earum ut asperiores a expedita? Repellat voluptas aperiam pariatur cumque minima.
+                Modi reprehenderit, repudiandae debitis quasi totam, sequi delectus porro voluptatum nostrum eius exercitationem deleniti facere animi quod aliquam ullam rem numquam optio nesciunt magnam rerum tenetur! Necessitatibus eveniet quaerat doloribus?</p>
+                <br>                
+            </div>
+        </section>
+
+        <aside class="asideform animate__animated animate__lightSpeedInRight">
+            <div class="tituloform">
+                <h2>Ingresa tu Informacion de Perfil</h2>
+            </div>
+            <div class="formulario">
+                <form id="contactform" action="" method="POST" target="_blank"  onload="">
+                    <div class="mb-4">
+                        <label class="form-label" for="nombre" class="form-label">Nombre *</label>
+                        <input class="form-control"  class="form-control" required type="text" name="name" id="nombre" placeholder="Ingresa tu nombre" size="15" maxlength="50" nombre="Nombre">
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label" for="apellido">Apellido *</label>
+                        <input class="form-control"  required type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" size="15" maxlength="50" nombre="Apellido">
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label" for="nacimiento">Nacimiento</label>
+                        <input class="form-control" type="date" name="nacimiento" id="nacimiento">
+                    </div>
+                    <div class="mb-4" id="sexoss">
+                        <label class="form-label" for="sexo">Sexo:</label>
+                        <div class="form-control form-control-inline">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="sexo" id="sexo1" value="Femenino">
+                                <label class="form-check-label" for="sexo1">Femenino</label>
+                            </div>  
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="sexo" id="sexo2" value="Masculino">
+                                <label class="form-check-label" for="sexo2">Masculino</label>
+                            </div>  
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="sexo" id="sexo3" value="Otro">
+                                <label class="form-check-label" for="sexo3">Otro</label>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label" for="_replyto">Email *</label>
+                        <input class="form-control"  required type="email" name="_replyto" id="_replyto" placeholder="Ingresá tu email" size="30" maxlength="150" nombre="Email">
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label" for="webinter">Ingresa tu web </label>
+                        <input class="form-control"  type="url" name="webinter" id="webinter" placeholder="Ingresá tu web" size="30" maxlength="150">
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label" for="clave">Clave *</label>
+                        <input class="form-control"  required type="password" name="clave" id="clave" placeholder="Ingresá tu clave" size="30" maxlength="150" nombre="Clave">
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label" for="reclave">Repeti clave *</label>
+                        <input class="form-control"  required type="password" name="reclave" id="reclave" placeholder="Repetí la clave" size="30" maxlength="150" nombre="Repeticion de la Clave">
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label" for="interesmayor">En que estás más interesado? *</label>
+                        <select class="form-select" name="interesmayor" id="interesmayor" required nombre="Lo que más te gusta">
+                            <option value="" selected>Seleccione una opcion</option>
+                            <option value="Expediciones">Expediciones</option>
+                            <option value="Telescopios">Telescopios Espaciales</option>
+                            <option value="Empresas">Empresas</option>
+                            <option value="Otros">Otros</option>
+                        </select>
+                    </div>
+                    <!-- <div class="mb-4">
+                            <label class="form-label" for="interesvarios">Aparte del anterior te interesan otros?:</label>
+                            <select class="form-select" name="interesvarios" id="interesvarios" multiple>
+                                <option value="Expediciones">Expediciones</option>
+                                <option value="Telescopios">Telescopios Espaciales</option>
+                                <option value="Empresas">Empresas</option>
+                                <option value="Otros">Otros</option>
+                            </select>
+                    </div> -->
+                    <div class="mb-4">
+                        <label class="form-label" for="archivo">Selecciona una foto carnet:</label>
+                        <input class="form-control"  type="file" name="archivo" id="archivo">
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label" for="message">Dejanos un mensaje para conocerte mejor *</label>
+                        <textarea  class="form-control" required name="message" id="message" placeholder="Escribí tu mensaje" cols="40" rows="5" nombre="Mensaje"  onkeypress="return tamano(this);"></textarea>
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label" for="colores">Color favorito:</label>
+                        <input class="form-control-color"  type="color" name="colores" id="colores" value="#000000" onchange="trainspotting(contactform.colores.value);">
+                        <div class="form-control form-control-inline">
+                            <div class="form-check form-check-inline">
+                                <label class="form-label etiqcolor" for="rangor">R:</label>
+                                <input class="form-control-inline etiqcolor" type="text" name="values1" disabled readonly size="1">
+                                <input class="form-range" type="range" name="rangor" id="rangor" value="0" onmousemove="aver(this.value,contactform.values1);" onblurr="convierte(contactform.rangor.value,contactform.rangog.value,contactform.rangob.value);">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-label etiqcolor" for="rangog">G:</label> 
+                                <input class="form-control-inline etiqcolor" type="text" name="values2" disabled readonly size="1">
+                                <input class="form-range" type="range" name="rangog" id="rangog" value="0" onmousemove="aver(this.value,contactform.values2);" onblurr="convierte(contactform.rangor.value,contactform.rangog.value,contactform.rangob.value);">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-label etiqcolor" for="rangob">B:</label>
+                                <input class="form-control-inline etiqcolor" type="text" name="values3" disabled readonly size="1">
+                                <input class="form-range" type="range" name="rangob" id="rangob" value="0" onmousemove="aver(this.value,contactform.values3);" onblurr="convierte(contactform.rangor.value,contactform.rangog.value,contactform.rangob.value);">
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-check-label" for="envioinfo">Deseo recibir Newsletters:</label>
+                            <input class="form-check-input" type="checkbox" name="envioinfo" id="envioinfo">
+                        </div>
+                        <input class="form-control"  type="hidden" name="todos" readonly size="10">
+                    </div>
+                    <script>
+                        contactform.values1.value=Math.round(contactform.rangor.value * 255 / 100);
+                        contactform.values2.value=Math.round(contactform.rangog.value * 255 / 100);
+                        contactform.values3.value=Math.round(contactform.rangob.value * 255 / 100);
+                    </script>
+                    <input class="form-control"  type="hidden" name="_subject" value="Website contact" />
+                    <input class="form-control"  type="hidden" name="_next" value="https://www.indicom.com.ar" />
+                    <div class="mb-4">
+                        <br>
+                        <button type="submit" class="btn btn-primary btn-lg" onclick="return valida();">Listo!</button>
+                        <button type="reset"  class="btn btn-danger btn-lg" accesskey="b" title="Atajo alt+b">Borra Todo</button>
+                        <br><br>
+                    </div>
+                </form>
+                <script>
+                    var contactform =  document.getElementById('contactform');
+                    contactform.setAttribute('action', 'https://formspree.io/' + 'asterla' + '@' + 'indicom' + '.' + 'com.ar');
+                </script>
+            
+            </div>
+        </aside>
+    </main>
+    
+    <footer class="animate__animated animate__slideInUp">
+        <br>
+        <div class="piecito">
+            <div>
+                Cabo Cañveral (EEUU)<br>
+                <iframe class="ifr"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44215.371765159565!2d-80.57809395694561!3d28.480381622628375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e0a3f2a5fb9a45%3A0x87ef91ee250f8fde!2sCabo%20Ca%C3%B1averal!5e0!3m2!1ses-419!2sar!4v1666583894415!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div>
+                Lanzamiento del Apolo 11<br>
+                <iframe class="ifr"  src="https://www.youtube.com/embed/KOygw3QfO9o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="piecito">
+            <h4>@ Copyright 2022 Todos los derechos reservados.</h4>
+            <a href="https://www.instagram.com/nasa" target="_blank" title="Instagram de la Nasa" ><i class="fa-brands fa-square-instagram">fa-instagram</i></a>
+            <a href="https://www.youtube.com/@nasa" target="_blank" title="YouTube de la Nasa" ><i class="fa-brands fa-youtube">fa-youtube></i></a>
+            <a href="https://earth.google.com/web/@-32.94159264,-57.18667881,-545.11652924a,10952938.71719956d,35y,356.24626771h,0t,0r" target="_blank" title="Locate de la Nasa" ><i class="fa-solid fa-location-dot">fa-localtion</i></a>
+            <a href="https://twitter.com/NASA" target="_blank" title="Twitter de la Nasa" ><i class="fa-brands fa-twitter">fa-twitter</i></a>
+            <a href="https://www.facebook.com/NASA" target="_blank" title="Facebook de la Nasa" ><i class="fa-brands fa-facebook">fa-facebook</i></a>
+            <a href="https://www.linkedin.com/company/nasa" target="_blank" title="Linkedin de la Nasa" ><i class="fa-brands fa-linkedin">fa-linkedin</i></a>
+        </div>
+        <br><a class="butone" href="#mainforreturn">Volver a menu </a><br><br>
+    </footer>
+    </body>
+</html>

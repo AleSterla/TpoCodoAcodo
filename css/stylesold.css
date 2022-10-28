@@ -16,6 +16,13 @@
 
 } 
 
+.form-range{
+    width:          50px;
+}
+/* .mb-0{
+    padding: 0px 0;
+} */
+
 html{
     font-size: 62.5%;
     /* font-size: 1rem; */
