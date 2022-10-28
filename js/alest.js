@@ -183,7 +183,7 @@ function fechahoy(){
 if(sPage == "observatorios.html" || sPage == "expediciones.html" ){
     let aura=fechahoy();
     // alert(aura);
-///////agregar    // obtener(aura,'1');
+    obtener(aura,'1');
     console.log(aura);
 }
 

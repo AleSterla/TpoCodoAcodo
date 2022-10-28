@@ -292,6 +292,12 @@ article > div{
     position: relative;
 }
 
+#imagen1,#imagen2{
+    min-width: 280px;
+    max-width: 100%;
+}
+
+
 @keyframes mueve{
     100% {transform: rotate(360deg);}
     /* 0%   {top: 18vh; transform:scale(0.3, 0.3);}
@@ -341,7 +347,7 @@ article > div{
 
     /* background-color: rgba(0, 0, 0, 0.733); */
     /* color: whitesmoke; */
-    padding: 30px 30px 30px 30px;
+    padding: 20px 20px 20px 20px;
     border-left: solid 1px rgb(38, 38, 255);
     font-size: 5rem;
     flex: 1 1 50%;
@@ -381,7 +387,7 @@ article > div{
 
 #touchmeagain{
     display: flex;
-    width: 300px;
+    width: 200px;
     background-color: blue;
     border-radius: 10px;
     justify-content: center;
